@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love is in the Air</title>
   <style>
-    /* CSS Rules */
+    
     body {
       font-family: Arial, sans-serif;
       background-color: #f7f7f7;
@@ -26,7 +26,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative; /* added */
+      position: relative; 
     }
     
     .header {
@@ -81,42 +81,8 @@
       margin-right: 10px;
     }
     
-    /* added flower design */
-    .flower {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      background-color: #FFC5C5;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
     
-    .flower::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 50px;
-      height: 50px;
-      background-color: #fff;
-      border-radius: 50%;
-    }
-    
-    .flower::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      height: 20px;
-      background-color: #FFC5C5;
-      border-radius: 50%;
-    }
+   
   </style>
 </head>
 <body>
@@ -134,16 +100,14 @@
     <div class="rsvp">
       <button id="yes-btn">Yes</button>
       <button id="no-btn">No</button>
-    </div>
-    <div class="flower"></div> <!-- added flower design -->
-  </div>
+    
 
   <script>
-    // Get the buttons
+  
     const yesBtn = document.getElementById('yes-btn');
     const noBtn = document.getElementById('no-btn');
 
-    // Add event listeners to the buttons
+   
     yesBtn.addEventListener('click', () => {
       alert('Reign is happy! See you soon!');
     });
