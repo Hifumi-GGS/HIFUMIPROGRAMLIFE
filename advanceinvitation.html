@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love is in the Air</title>
+  <style>
+    /* CSS Rules */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; /* added */
+    }
+    
+    .header {
+      background-color: #FFC5C5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+    }
+    
+    .event-details {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+    }
+    
+    .event-details h2 {
+      margin-top: 0;
+    }
+    
+    .event-details p {
+      margin-bottom: 10px;
+    }
+    
+    .rsvp {
+      margin-top: 20px;
+      text-align: center;
+      width: 80%;
+    }
+    
+    .rsvp button {
+      background-color: #FFC5C5;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .rsvp button:hover {
+      background-color: #FF99CC;
+    }
+    
+    .rsvp button:first-child {
+      margin-right: 10px;
+    }
+    
+    /* added flower design */
+    .flower {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background-color: #FFC5C5;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .flower::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    
+    .flower::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: #FFC5C5;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Date With Me?</h1>
+    </div>
+    <div class="event-details">
+      <h2>Event Details</h2>
+      <p>Date: Saturday, February 14th</p>
+      <p>Time: 7:00 PM</p>
+      <p>Location: The Rooftop Restaurant</p>
+      <p>Dress Code: Whatever makes you comfortable</p>
+    </div>
+    <div class="rsvp">
+      <button id="yes-btn">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+    <div class="flower"></div> <!-- added flower design -->
+  </div>
+
+  <script>
+    // Get the buttons
+    const yesBtn = document.getElementById('yes-btn');
+    const noBtn = document.getElementById('no-btn');
+
+    // Add event listeners to the buttons
+    yesBtn.addEventListener('click', () => {
+      alert('Reign is happy! See you soon!');
+    });
+    noBtn.addEventListener('click', () => {
+      alert('Reign is sad');
+    });
+  </script>
+</body>
+</html>
