@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love is in the Air</title>
+  <title>Date With Me?</title>
   <style>
-    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      background-color: #f9f9f9;
     }
-    
+
     .container {
       max-width: 800px;
-      background-color: #fff;
+      margin: 40px auto;
       padding: 20px;
+      background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative; 
     }
-    
+
     .header {
       background-color: #FFC5C5;
       color: #fff;
@@ -36,9 +31,12 @@
       text-align: center;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-      width: 100%;
     }
-    
+
+    .header h1 {
+      margin-top: 0;
+    }
+
     .event-details {
       margin-top: 20px;
       padding: 20px;
@@ -46,23 +44,21 @@
       border: 1px solid #ddd;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 80%;
     }
-    
+
     .event-details h2 {
       margin-top: 0;
     }
-    
+
     .event-details p {
       margin-bottom: 10px;
     }
-    
+
     .rsvp {
       margin-top: 20px;
       text-align: center;
-      width: 80%;
     }
-    
+
     .rsvp button {
       background-color: #FFC5C5;
       color: #fff;
@@ -71,24 +67,43 @@
       font-size: 16px;
       cursor: pointer;
       border-radius: 5px;
+      margin: 10px;
     }
-    
+
     .rsvp button:hover {
       background-color: #FF99CC;
     }
-    
-    .rsvp button:first-child {
-      margin-right: 10px;
+
+    .audio-player {
+      margin-top: 40px;
+      text-align: center;
     }
-    
-    
-   
+
+    .audio-player audio {
+      width: 100%;
+    }
+
+    .audio-player .audio-controls {
+      margin-left: 10px;
+    }
+
+    .audio-player .audio-controls button {
+      background-color: #FFC5C5;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .audio-player .audio-controls button:hover {
+      background-color: #FF99CC;
+    }
   </style>
 </head>
 <body>
-    <audio autoplay loop>
-        <source src = "10CM 'Spring Snow (Lovely Runner OST Part 8)' Easy Lyrics.mp3" type="audio/mp3">
-    </audio>
   <div class="container">
     <div class="header">
       <h1>Date With Me?</h1>
@@ -101,22 +116,49 @@
       <p>Dress Code: Whatever makes you comfortable</p>
     </div>
     <div class="rsvp">
-      <button id="yes-btn">Yes</button>
-      <button id="no-btn">No</button>
-    
+      <button id="yes-btn">Yes, I'd love to!</button>
+      <button id="no-btn">No, sorry!</button>
+    </div>
+    <div class="audio-player">
+      <audio id="audio" controls autoplay loop>
+        <source src="10CM 'Spring Snow (Lovely Runner OST Part 8)' Easy Lyrics.mp3" type="audio/mp3">
+      </audio>
+      <div class="audio-controls">
+        <button id="play-btn">Play</button>
+        <button id="pause-btn">Pause</button>
+      </div>
+    </div>
+  </div>
 
   <script>
-  
     const yesBtn = document.getElementById('yes-btn');
     const noBtn = document.getElementById('no-btn');
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('play-btn');
+    const pauseBtn = document.getElementById('pause-btn');
 
-   
     yesBtn.addEventListener('click', () => {
       alert('Reign is happy! See you soon!');
+      sendEmail('CHOP CHOP BOY, SHE SAID YES!!');
     });
     noBtn.addEventListener('click', () => {
       alert('Reign is sad');
+      sendEmail('She said no, Too bad man...');
     });
+
+    playBtn.addEventListener('click', () => {
+      audio.play();
+    });
+    pauseBtn.addEventListener('click', () => {
+      audio.pause();
+    });
+
+    function sendEmail(message) {
+      const email = 'reignjoshua.parnaso@unc.edu.ph'
+      const subject = 'Notif: ';
+      const body = `Subject: ${subject}\r\n\r\n${message}`;
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    }
   </script>
 </body>
 </html>
