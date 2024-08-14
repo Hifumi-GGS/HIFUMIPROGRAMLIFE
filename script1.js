@@ -1,4 +1,5 @@
- const yesBtn = document.getElementById('yes-btn');
+<script>
+const yesBtn = document.getElementById('yes-btn');
     const noBtn = document.getElementById('no-btn');
     const audio = document.getElementById('audio');
     const playBtn = document.getElementById('play-btn');
@@ -26,3 +27,4 @@
       const body = `Subject: ${subject}\r\n\r\n${message}`;
       window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     }
+</script>
