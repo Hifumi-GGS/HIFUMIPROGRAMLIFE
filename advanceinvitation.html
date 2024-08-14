@@ -31,6 +31,7 @@
       </div>
     </div>
   </div>
+  
   <script> 
     const yesBtn = document.getElementById('yes-btn');
     const noBtn = document.getElementById('no-btn');
@@ -44,6 +45,14 @@
       sendEmailNo();
     });
   </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "etLdpqvrOfMvYwfmq",
+      });
+   })();
+</script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <script type="text/javascript" src="script1.js"></script>
   <script type="text/javascript" src="script2.js"></script>
