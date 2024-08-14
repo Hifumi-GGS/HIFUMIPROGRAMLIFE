@@ -40,14 +40,5 @@ const yesBtn = document.getElementById('yes-btn');
 );
     }
 
-   </script>
-   <script>
-     const audio = document.getElementById('audio');
-    const playBtn = document.getElementById('play-btn');
-    const pauseBtn = document.getElementById('pause-btn');
-      playBtn.addEventListener('click', () => {
-      audio.play();
-    });
-    pauseBtn.addEventListener('click', () => {
-      audio.pause();
-    });
+   
+    
