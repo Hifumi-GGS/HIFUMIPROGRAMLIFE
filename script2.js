@@ -8,7 +8,14 @@
     Subject : "Her Response",
     Body : "MAN DOWN! I REPEAT MAN DOWN!!"
 }).then(
-  message => alert(Sent to Reign!!)
+  message => {
+  	if(message=='OK'){
+  		swal("Secussful", "You clicked the button!", "success");
+  	}
+  	else{
+  		swal("Error", "You clicked the button!", "error");
+  	}
+  }
 );
     }
     
@@ -22,7 +29,14 @@
     Subject : "Her Response",
     Body : "DRESS UP, SHE SAID YES!!!"
 }).then(
-  message => alert(Sent to Reign!!)
+  message => {
+  	if(message=='OK'){
+  		swal("Secussful", "You clicked the button!", "success");
+  	}
+  	else{
+  		swal("Error", "You clicked the button!", "error");
+  	}
+  }
 );
     }
 
