@@ -1,23 +1,21 @@
   function sendEmailNo() {
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "parnasoreignjoshua@gmail.com",
-    Password : "157FF7E4DA37CA98CCB3DE8ED382DF188317",
-    To : 'reignjoshua.parnaso@unc.edu.ph',
-    From : "parnasoreignjoshua@gmail.com",
-    Subject : "Her Response",
-    Body : "MAN DOWN! I REPEAT MAN DOWN!!"
-});
+    let parms = {
+      name : Notif.me
+      email : parnasoreignjoshua@gmail.com
+    subject : notif: 
+    message : MAN DOWN I REPEAT MAN DOWN!!!
+   }
+  emailjs.send(service_u8gefiz, template_h43bagj, parms)
+     }
     
     function sendEmailYes() {
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "parnasoreignjoshua@gmail.com",
-    Password : "157FF7E4DA37CA98CCB3DE8ED382DF188317",
-    To : 'reignjoshua.parnaso@unc.edu.ph',
-    From : "parnasoreignjoshua@gmail.com",
-    Subject : "Her Response",
-    Body : "DRESS UP, SHE SAID YES!!!"
-});
+       let parms = {
+      name : Notif.me
+      email : parnasoreignjoshua@gmail.com
+    subject : notif: 
+    message : GET READY, SHE SAID YES!!!
+   }
+  emailjs.send(service_u8gefiz, template_h43bagj, parms)
+     }
    
     
