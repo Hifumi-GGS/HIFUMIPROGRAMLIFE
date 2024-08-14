@@ -2,11 +2,9 @@ const yesBtn = document.getElementById('yes-btn');
     const noBtn = document.getElementById('no-btn');
    
     yesBtn.addEventListener('click', () => {
-      alert('Reign is happy! See you soon!');
       sendEmailYes();
     });
     noBtn.addEventListener('click', () => {
-      alert('Reign is sad');
       sendEmailNo();
     });
 
