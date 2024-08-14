@@ -31,6 +31,19 @@
       </div>
     </div>
   </div>
+  <script> 
+    const yesBtn = document.getElementById('yes-btn');
+    const noBtn = document.getElementById('no-btn');
+   
+    yesBtn.addEventListener('click', () => {
+      alert('Reign is happy! See you soon!');
+      sendEmailYes();
+    });
+    noBtn.addEventListener('click', () => {
+      alert('Reign is sad');
+      sendEmailNo();
+    });
+  </script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    <script type="text/javascript" src="script1.js"></script>
   <script type="text/javascript" src="script2.js"></script>
