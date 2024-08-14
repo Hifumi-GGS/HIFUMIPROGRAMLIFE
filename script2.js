@@ -10,12 +10,9 @@
 }).then(
   message => {
   	if(message=='OK'){
-  		swal("Secussful", "You clicked the button!", "success");
+  		swal("SHE SAID NO", "TOO BAD", ":(");
   	}
-  	else{
-  		swal("Error", "You clicked the button!", "error");
-  	}
-  }
+  
 );
     }
     
@@ -30,13 +27,9 @@
     Body : "DRESS UP, SHE SAID YES!!!"
 }).then(
   message => {
-  	if(message=='OK'){
-  		swal("Secussful", "You clicked the button!", "success");
+  		swal("SHE SAID YES", "DRESS UP BROOO", "LET'S GOOO");
   	}
-  	else{
-  		swal("Error", "You clicked the button!", "error");
-  	}
-  }
+  
 );
     }
 
