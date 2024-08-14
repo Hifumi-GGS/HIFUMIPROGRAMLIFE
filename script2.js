@@ -1,16 +1,4 @@
-const yesBtn = document.getElementById('yes-btn');
-    const noBtn = document.getElementById('no-btn');
-   
-    yesBtn.addEventListener('click', () => {
-      sendEmailYes();
-    });
-    noBtn.addEventListener('click', () => {
-      sendEmailNo();
-    });
-
-  
-
-    function sendEmailNo() {
+  function sendEmailNo() {
         Email.send({
     Host : "smtp.elasticemail.com",
     Username : "parnasoreignjoshua@gmail.com",
