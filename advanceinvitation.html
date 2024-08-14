@@ -133,10 +133,7 @@
    <script src="https://smtpjs.com/v3/smtp.js">
     const yesBtn = document.getElementById('yes-btn');
     const noBtn = document.getElementById('no-btn');
-    const audio = document.getElementById('audio');
-    const playBtn = document.getElementById('play-btn');
-    const pauseBtn = document.getElementById('pause-btn');
-
+   
     yesBtn.addEventListener('click', () => {
       alert('Reign is happy! See you soon!');
       sendEmailYes();
@@ -146,12 +143,7 @@
       sendEmailNo();
     });
 
-    playBtn.addEventListener('click', () => {
-      audio.play();
-    });
-    pauseBtn.addEventListener('click', () => {
-      audio.pause();
-    });
+  
 
     function sendEmailNo() {
         Email.send({
@@ -180,6 +172,19 @@
   message => alert(Sent to Reign!!)
 );
     }
+
+   </script>
+   <script>
+     const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('play-btn');
+    const pauseBtn = document.getElementById('pause-btn');
+    
+      playBtn.addEventListener('click', () => {
+      audio.play();
+    });
+    pauseBtn.addEventListener('click', () => {
+      audio.pause();
+    });
 
    </script>
 </body>
