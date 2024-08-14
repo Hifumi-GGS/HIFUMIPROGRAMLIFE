@@ -36,11 +36,11 @@
     const noBtn = document.getElementById('no-btn');
    
     yesBtn.addEventListener('click', () => {
-      alert('Reign is happy! See you soon!');
+      Swal.fire("REIGN IS VERY HAPPY");
       sendEmailYes();
     });
     noBtn.addEventListener('click', () => {
-      alert('Reign is sad');
+      Swal.fire("REIGN IS VERY SAD");
       sendEmailNo();
     });
   </script>
