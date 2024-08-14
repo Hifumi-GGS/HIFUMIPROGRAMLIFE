@@ -18,8 +18,8 @@
       <p>Dress Code: Whatever makes you comfortable</p>
     </div>
     <div class="rsvp">
-      <button id="yes-btn">Yes, I'd love to!</button>
-      <button id="no-btn">No, sorry!</button>
+      <button id="yes-btn" onclick="sendEmailYes()">Yes, I'd love to!</button>
+      <button id="no-btn"  onclick="sendEmailNo()">No, sorry!</button>
     </div>
     <div class="audio-player">
       <audio id="audio" controls autoplay loop>
@@ -38,11 +38,9 @@
    
     yesBtn.addEventListener('click', () => {
       Swal.fire("REIGN IS VERY HAPPY");
-      sendEmailYes();
     });
     noBtn.addEventListener('click', () => {
       Swal.fire("REIGN IS VERY SAD");
-      sendEmailNo();
     });
   </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
