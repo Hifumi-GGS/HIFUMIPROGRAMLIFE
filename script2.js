@@ -8,12 +8,9 @@
     Subject : "Her Response",
     Body : "MAN DOWN! I REPEAT MAN DOWN!!"
 }).then(
-  message => {
-  	if(message=='OK'){
-  		swal("SHE SAID NO", "TOO BAD", ":(");
-  	}
-  
-);
+  message => 
+    {
+      Swal.fire("REIGN IS VERY SAD");
     }
     
     function sendEmailYes() {
@@ -26,11 +23,9 @@
     Subject : "Her Response",
     Body : "DRESS UP, SHE SAID YES!!!"
 }).then(
-  message => {
-  		swal("SHE SAID YES", "DRESS UP BROOO", "LET'S GOOO");
-  	}
-  
-);
+  message => 
+    {
+      Swal.fire("REIGN IS VERY HAPPY");
     }
 
    
