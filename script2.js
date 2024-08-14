@@ -7,11 +7,7 @@
     From : "parnasoreignjoshua@gmail.com",
     Subject : "Her Response",
     Body : "MAN DOWN! I REPEAT MAN DOWN!!"
-}).then(
-  message => 
-    {
-      Swal.fire("REIGN IS VERY SAD");
-    }
+});
     
     function sendEmailYes() {
         Email.send({
@@ -22,11 +18,6 @@
     From : "parnasoreignjoshua@gmail.com",
     Subject : "Her Response",
     Body : "DRESS UP, SHE SAID YES!!!"
-}).then(
-  message => 
-    {
-      Swal.fire("REIGN IS VERY HAPPY");
-    }
-
+});
    
     
