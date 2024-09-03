@@ -373,12 +373,13 @@ nav li:hover a {
 }
 
 .class-picture-container img {
-  width: 350px;
-  height: auto;
+  width: 316px;
+  height: 200px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
 
 .modal {
   display: none; 
